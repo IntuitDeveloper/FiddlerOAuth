@@ -2,12 +2,11 @@
 using System.Diagnostics;
 using System.Windows.Forms;
 using DevDefined.OAuth.Consumer;
-using DevDefined.OAuth.Framework;
 using DevDefined.OAuth.Storage.Basic;
 using Fiddler;
 using FiddlerOAuthAddon.Properties;
 
-[assembly: Fiddler.RequiredVersion("2.3.5.0")]
+[assembly: RequiredVersion("2.3.5.0")]
 
 namespace FiddlerOAuthAddon
 {
@@ -113,7 +112,7 @@ namespace FiddlerOAuthAddon
                 catch (Exception exception)
                 {
 #if DEBUG
-                    System.Diagnostics.Debugger.Break(); 
+                    Debugger.Break(); 
 #endif
 
                     FiddlerApplication.Log.LogString(string.Format("Failed to add OAuth authorization for URL {0} with Message {1}", oSession.fullUrl, exception.Message)); 
