@@ -1,7 +1,9 @@
-[![Sample Banner](views/Sample.png)][ss1]
+[![Sample Banner](views/Callout.png)][ss1]
 
 FiddlerOAuth
 ============
+
+## Note : This sample uses OAuth1.0
 
 Fiddler extension to sign requests with OAuth
 
